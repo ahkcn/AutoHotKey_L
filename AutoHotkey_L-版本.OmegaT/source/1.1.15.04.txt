@@ -1,0 +1,6 @@
+1.1.15.04
+
+Fixed a performance issue with &var_containing_long_string_of_digits.
+Fixed built-in variables corrupting memory when an object is assigned. An error message is now shown instead.
+Fixed parser to disallow continue where appropriate even if the current function is defined inside a Loop.
+Fixed File.Encoding := x "-RAW" breaking encoding/decoding of non-ASCII characters. The -RAW suffix is now ignored. See File.Encoding for details (including some that were previously undocumented).

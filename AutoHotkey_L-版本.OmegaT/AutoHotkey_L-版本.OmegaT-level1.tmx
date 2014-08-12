@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="2.6.3_10" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An error message is now shown instead.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T070637Z">
+        <seg>修正后会提示错误信息。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed File.Encoding := x "-RAW" breaking encoding/decoding of non-ASCII characters.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071716Z">
+        <seg>修正错误，File.Encoding := x "-RAW"打断对非ASCII字符的编码/解码。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed a performance issue with &amp;var_containing_long_string_of_digits.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T070208Z">
+        <seg>修正性能问题：变量名为长数值字符串。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed built-in variables corrupting memory when an object is assigned.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T070526Z">
+        <seg>修正问题：当内置变量被赋值为对象时，会破坏内存数据。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed parser to disallow continue where appropriate even if the current function is defined inside a Loop.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071527Z">
+        <seg>修正代码解析错误，以禁止某些代码中的continue命令，即便此命令在Loop内。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See File.Encoding for details (including some that were previously undocumented).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071906Z">
+        <seg>细节参见File.Encoding（包含之前文档的遗漏新信息）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The -RAW suffix is now ignored.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071750Z">
+        <seg>-RAW后缀被略过。</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
