@@ -6,10 +6,50 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>Added syntax for defining dynamic [url=http://ahkscript.org/docs/Objects.htm#Custom_Classes_property]properties[/url] in classes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T083657Z">
+        <seg>支持在类中动态定义[url=http://ahkscript.org/docs/Objects.htm#Custom_Classes_property]属性[/url]（英文）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Added the #InputLevel of each hotkey to ListHotkeys (when non-zero).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T084309Z">
+        <seg>为ListHotkeys（列出热键）中每个热键增加#InputLevel项。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Added x+m and y+m options for Gui control positioning.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T083729Z">
+        <seg>为Gui控件定位增加x+m与y+m选项。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An error message is now shown instead.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T070637Z">
         <seg>修正后会提示错误信息。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed #If to add itself to ListLines (though as "If").</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094605Z">
+        <seg>修复#If，将它自己添加到ListLines中（将显示为If）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed A_LineFile/A_LineNumber in #If expressions.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094525Z">
+        <seg>修复A_LineFile / A_LineNumber在#If表达式中（无法正确返回设计值）的问题。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22,10 +62,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fixed FileRead *c to null-terminate correctly when byte length is odd.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T085120Z">
+        <seg>修复FileRead *c，使当字节长度为奇数时，亦能正确的放置空结尾字符。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed FileRead to correctly report an error with files over 4GB, instead of truncating even when it wasn't requested.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T085004Z">
+        <seg>修复FileRead，使正确报告文件超4GB时的错误，而非截断数据，即便不需要这部分数据时。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed [c]Abs(["-"]*)[/c] and similar crashing the program.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094638Z">
+        <seg>修复[c]Abs(["-"]*)[/c]及类似情况下的崩溃问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed [c]} funcdef(){[/c] globally and [c]}}[/c] ending a method/property/class.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094837Z">
+        <seg>修复全局中[c]} funcdef(){[/c]及[c]}}[/c]结尾的方法/属性/类。（？）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fixed a performance issue with &amp;var_containing_long_string_of_digits.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T070208Z">
         <seg>修正性能问题：变量名为长数值字符串。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed a possible ListView/TreeView message filtering issue.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094435Z">
+        <seg>修复ListView/TreeView消息筛选中可能的问题。</seg>
       </tuv>
     </tu>
     <tu>
@@ -38,10 +118,43 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fixed objects to check for new methods after __Call completes (consistent with __Set and __Get).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T084731Z">
+        <seg>修复对象，当__Call结束时将检测新方法（同__Set及__Get一致）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fixed parser to disallow continue where appropriate even if the current function is defined inside a Loop.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071527Z">
         <seg>修正代码解析错误，以禁止某些代码中的continue命令，即便此命令在Loop内。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed some ClipboardAll issues and changed behaviour:
+[list][*][url=http://ahkscript.org/docs/commands/_ClipboardTimeout.htm]#ClipboardTimeout[/url] is ignored for GetClipboardData(), since it never actually worked and it caused problems.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T085639Z">
+        <seg>修复ClipboardAll的问题，作如下改变：[list][*][url=http://ahkscript.org/docs/commands/_ClipboardTimeout.htm]#ClipboardTimeout[/url]（英文）被GetClipboardData()忽略，之前它也并未实际发挥作用却导致问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fixed some undefined behaviour occurring after VarSetCapacity fails.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T084801Z">
+        <seg>修复一些VarSetCapacity失败后的未定义行为。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Optimized RegExMatch with the O (object) option; capturing part of a long string is much faster than before in some cases.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T084459Z">
+        <seg>优化待O（对象）选项的RegExMatch（正则查找）。某些情况下，捕获长字符串较之前有极大提速。</seg>
       </tuv>
     </tu>
     <tu>
@@ -58,6 +171,79 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140812T071750Z">
         <seg>-RAW后缀被略过。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This fixes timeouts and lost data when a file is on the clipboard (any file on Windows 8, or any file in a zip file or similar).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T085837Z">
+        <seg>本修复解决剪切板为文件时（Windows 8中的任何文件，及zip或类似东西中的文件），超时及丢失数据的问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This increases the reported StrLen by 1, potentially avoiding truncation of the last byte.[/list]
+Fixed A_EventInfo for TreeView items with negative screen coords.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094400Z">
+        <seg>则由StrLen返回的结果可能被加1，避免可能对最后一个字节的截断。[/list]修复带负屏幕坐标值的TreeView控件的A_EventInfo值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[*]ClipboardAll and FileRead *c on Unicode builds now round length up when odd.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094029Z">
+        <seg>[*]Unicode版本中当ClipboardAll及FileRead *c数据长度为奇数时，将向上取整到最近的偶数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[*]The presence of MSDEVColumnSelect/MSDEVLineSelect is now preserved when set by Scintilla, though any data set by VS is discarded.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T093209Z">
+        <seg>[*]由Scintilla设置的MSDEVColumnSelect / MSDEVLineSelec将被保持，但由VS设置的任何数据将被丢弃。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[*]When writing ClipboardAll directly to file, it now prefers Unicode (other usages of ClipboardAll have had this behaviour since v1.1.08).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T093459Z">
+        <seg>[*]当直接将ClipboardAll写至文件时，将优先使用Unicode（ClipboardAll的其他使用情况自v1.1.08起便如此）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[*]Zero-length clipboard items are allocated 1 byte upon restoring to the clipboard, since setting a zero-length item seems to always fail.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T090236Z">
+        <seg>[*]为零长度剪切板内容分配1字节再返还给剪切板，之前设置为零长度似乎有问题。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[b][size=150][url=http://ahkscript.org/download/]Downloads[/url][/size][/b][/quote]</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T094854Z">
+        <seg>[b][size=150][url=http://ahkscript.org/download/]下载[/url][/size][/b][/quote]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[quote="lexikos"][b][size=150]1.1.16.01[/size][/b]</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T083556Z">
+        <seg>[quote="lexikos"][b][size=150]1.1.16.01[/size][/b]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[url=http://ahkscript.org/boards/viewtopic.php?f=24&amp;t=4519]v1.1.16 - Properties, bug fixes and optimizations[/url]</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T083148Z">
+        <seg>[url=http://ahkscript.org/boards/viewtopic.php?f=24&amp;t=4519]v1.1.16 - 属性，Bug修复，优化[/url]</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

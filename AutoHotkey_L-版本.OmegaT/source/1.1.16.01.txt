@@ -1,0 +1,28 @@
+[url=http://ahkscript.org/boards/viewtopic.php?f=24&t=4519]v1.1.16 - Properties, bug fixes and optimizations[/url]
+
+[quote="lexikos"][b][size=150]1.1.16.01[/size][/b]
+
+Added syntax for defining dynamic [url=http://ahkscript.org/docs/Objects.htm#Custom_Classes_property]properties[/url] in classes.
+Added x+m and y+m options for Gui control positioning.
+Added the #InputLevel of each hotkey to ListHotkeys (when non-zero).
+
+Optimized RegExMatch with the O (object) option; capturing part of a long string is much faster than before in some cases.
+
+Fixed objects to check for new methods after __Call completes (consistent with __Set and __Get).
+Fixed some undefined behaviour occurring after VarSetCapacity fails.
+Fixed FileRead to correctly report an error with files over 4GB, instead of truncating even when it wasn't requested.
+Fixed FileRead *c to null-terminate correctly when byte length is odd.
+Fixed some ClipboardAll issues and changed behaviour:
+[list][*][url=http://ahkscript.org/docs/commands/_ClipboardTimeout.htm]#ClipboardTimeout[/url] is ignored for GetClipboardData(), since it never actually worked and it caused problems. This fixes timeouts and lost data when a file is on the clipboard (any file on Windows 8, or any file in a zip file or similar).
+[*]Zero-length clipboard items are allocated 1 byte upon restoring to the clipboard, since setting a zero-length item seems to always fail.
+[*]The presence of MSDEVColumnSelect/MSDEVLineSelect is now preserved when set by Scintilla, though any data set by VS is discarded.
+[*]When writing ClipboardAll directly to file, it now prefers Unicode (other usages of ClipboardAll have had this behaviour since v1.1.08).
+[*]ClipboardAll and FileRead *c on Unicode builds now round length up when odd. This increases the reported StrLen by 1, potentially avoiding truncation of the last byte.[/list]
+Fixed A_EventInfo for TreeView items with negative screen coords.
+Fixed a possible ListView/TreeView message filtering issue.
+Fixed A_LineFile/A_LineNumber in #If expressions.
+Fixed #If to add itself to ListLines (though as "If").
+Fixed [c]Abs(["-"]*)[/c] and similar crashing the program.
+Fixed [c]} funcdef(){[/c] globally and [c]}}[/c] ending a method/property/class.
+
+[b][size=150][url=http://ahkscript.org/download/]Downloads[/url][/size][/b][/quote]
