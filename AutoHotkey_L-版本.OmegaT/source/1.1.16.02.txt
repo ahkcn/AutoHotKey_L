@@ -1,0 +1,8 @@
+[url=http://ahkscript.org/boards/viewtopic.php?p=25616&sid=1e9f9085100075493f341e9a281ac15b#p25616]1.1.16.02[/url]
+
+[b][size=150]1.1.16.02[/size][/b]
+
+Fixed parser to allow #include inside a class (broken by v1.1.16.01).
+Fixed Clipboard returning binary CF_HDROP data in some instances.
+Improved accuracy of FileGetSize on files which are still open.
+Improved for-loop to work with COM objects which either don't resolve the name "_NewEnum" to DISPID_NEWENUM, or which implement _NewEnum as a property rather than a method.
