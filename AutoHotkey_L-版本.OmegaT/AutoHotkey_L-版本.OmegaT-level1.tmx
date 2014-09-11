@@ -167,6 +167,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fixed some bad behaviour in Abs() and Mod() caused by a broken bug-fix in v1.1.16.01.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140911T123154Z">
+        <seg>修复Abs()及Mod()的一些错误的行为，于v1.1.16.01引入的错误的修复。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fixed some undefined behaviour occurring after VarSetCapacity fails.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140910T084801Z">
@@ -300,6 +308,14 @@ Fixed A_EventInfo for TreeView items with negative screen coords.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="RobertL" changedate="20140911T105705Z">
         <seg>[url=http://ahkscript.org/boards/viewtopic.php?p=25616&amp;sid=1e9f9085100075493f341e9a281ac15b#p25616]1.1.16.02[/url]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[url=http://ahkscript.org/boards/viewtopic.php?p=25638#p25638]1.1.16.03[/url]</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="RobertL" changedate="20140911T123033Z">
+        <seg>[url=http://ahkscript.org/boards/viewtopic.php?p=25638#p25638]1.1.16.03[/url]</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

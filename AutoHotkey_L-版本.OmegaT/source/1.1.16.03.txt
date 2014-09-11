@@ -1,0 +1,3 @@
+[url=http://ahkscript.org/boards/viewtopic.php?p=25638#p25638]1.1.16.03[/url]
+
+Fixed some bad behaviour in Abs() and Mod() caused by a broken bug-fix in v1.1.16.01.
