@@ -1,0 +1,4 @@
+[b][size=150][url=http://ahkscript.org/boards/viewtopic.php?p=26099#p26099]1.1.16.04[/url][/size][/b]
+
+Fixed a crash which occurred when overwriting a non-writable property.
+Fixed a crash which occurred when a RegExMatch object is created with uncaptured subpatterns during a regex callout.[/quote]
